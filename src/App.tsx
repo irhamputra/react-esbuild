@@ -62,7 +62,7 @@ function App() {
       {loading ? (
         <h2>Loading...</h2>
       ) : errMessage ? (
-        <h3>Suggestion found</h3>
+        <h3>{errMessage}</h3>
       ) : (
         list.map((v) => {
           return (
