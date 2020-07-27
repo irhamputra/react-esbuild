@@ -31,7 +31,9 @@ function App() {
     setLoading(true);
 
     axios
-      .get(`http://api.dataatwork.org/v1/jobs/autocomplete?contains=${params}`)
+      .get(
+        `http://api.dataatwork.org/v1/jobs/autocomplete?contains="${params}"'`
+      )
       .then((res) => {
         setList(res.data);
         setLoading(false);
