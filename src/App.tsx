@@ -15,7 +15,9 @@ function App() {
     setLoading(true);
 
     axios
-      .get('http://api.dataatwork.org/v1/jobs/autocomplete?contains="software"')
+      .get(
+        'https://api.dataatwork.org/v1/jobs/autocomplete?contains="software"'
+      )
       .then((res) => {
         setList(res.data);
         setLoading(false);
