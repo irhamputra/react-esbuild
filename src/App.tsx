@@ -32,7 +32,7 @@ function App() {
 
     axios
       .get(
-        `http://api.dataatwork.org/v1/jobs/autocomplete?contains="${params}"'`
+        `http://api.dataatwork.org/v1/jobs/autocomplete?contains="${params}"`
       )
       .then((res) => {
         setList(res.data);
