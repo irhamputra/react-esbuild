@@ -1,0 +1,26 @@
+{
+  "name": "react-esbuild",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Muhamad Irham Prasetyo",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "esbuild src/index.tsx --bundle '--define:process.env.NODE_ENV=\"development\"' --outfile=public/dev.js",
+    "build:prod": "esbuild src/index.tsx --bundle '--define:process.env.NODE_ENV=\"production\"' --minify --outfile=public/prod.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-hot-loader": "^4.1.1",
+    "esbuild": "^0.6.8",
+    "prettier": "^2.0.5",
+    "react-hot-loader": "^4.12.21",
+    "typescript": "^3.9.7"
+  }
+}
