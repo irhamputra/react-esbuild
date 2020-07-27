@@ -16,7 +16,7 @@ function App() {
 
     axios
       .get(
-        'https://api.dataatwork.org/v1/jobs/autocomplete?contains="software"'
+        'https://cors-anywhere.herokuapp.com/https://api.dataatwork.org/v1/jobs/autocomplete?contains="software"'
       )
       .then((res) => {
         setList(res.data);
