@@ -32,7 +32,7 @@ function App() {
 
     axios
       .get(
-        `http://api.dataatwork.org/v1/jobs/autocomplete?contains="${params}"`
+        `https://cors-anywhere.herokuapp.com/http://api.dataatwork.org/v1/jobs/autocomplete?contains="${params}"`
       )
       .then((res) => {
         setList(res.data);
